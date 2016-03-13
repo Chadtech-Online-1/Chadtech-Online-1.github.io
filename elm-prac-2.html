@@ -7082,7 +7082,7 @@ Elm.Main.make = function (_elm) {
    var physics = F2(function (dt,reasey) {
       return _U.update(reasey,{y: reasey.y + dt * reasey.vy,x: reasey.x + dt * reasey.vx,a: reasey.a + dt * reasey.va});
    });
-   var gravity = F2(function (dt,reasey) {    return _U.update(reasey,{vy: reasey.vy - dt / 30,vx: reasey.vx - dt / 94});});
+   var gravity = F2(function (dt,reasey) {    return _U.update(reasey,{vy: reasey.vy - dt / 50,vx: reasey.vx - dt / 94});});
    var deltaX = function (reasey) {
       var sin$ = $Basics.sin($Basics.degrees(reasey.a));
       var main = A2(F2(function (x,y) {    return x * y;}),(0 - sin$) * 2.5,$Basics.toFloat(reasey.thrusters.main));
@@ -7138,8 +7138,8 @@ Elm.Main.make = function (_elm) {
                   ,rightSide: A2(keyPressed,k,keys)
                   ,rightBack: A2(keyPressed,u,keys)}});
    });
-   var update = F2(function (_p0,reasey) {    var _p1 = _p0;return A2(physics,_p1._0,thrust(A2(setThrusters,_p1._1,reasey)));});
-   var reasey = {x: 0,y: 0,a: 0,vx: 0,vy: 0,va: 0,thrusters: {leftFront: 0,leftSide: 0,leftBack: 0,main: 0,rightFront: 0,rightSide: 0,rightBack: 0}};
+   var update = F2(function (_p0,reasey) {    var _p1 = _p0;var _p2 = _p1._0;return A2(physics,_p2,thrust(A2(gravity,_p2,A2(setThrusters,_p1._1,reasey))));});
+   var reasey = {x: 0,y: 0,a: 0,vx: -0.4,vy: 3,va: 0.5,thrusters: {leftFront: 0,leftSide: 0,leftBack: 0,main: 0,rightFront: 0,rightSide: 0,rightBack: 0}};
    var Ship = F7(function (a,b,c,d,e,f,g) {    return {x: a,y: b,a: c,vx: d,vy: e,va: f,thrusters: g};});
    var root = "https://raw.githubusercontent.com/Chadtech-Online-1/Chadtech-Online-1.github.io/master/";
    var drawLander = function (reasey) {
@@ -7180,17 +7180,17 @@ Elm.Main.make = function (_elm) {
       A2($List.append,leftFront,A2($List.append,rightFront,A2($List.append,leftBack,A2($List.append,rightBack,A2($List.append,leftSide,rightSide)))))));
       return A3($Graphics$Collage.collage,138,138,lander$);
    };
-   var view = F2(function (_p2,reasey) {
-      var _p3 = _p2;
-      var _p6 = _p3._0;
-      var _p5 = _p3._1;
+   var view = F2(function (_p3,reasey) {
+      var _p4 = _p3;
+      var _p7 = _p4._0;
+      var _p6 = _p4._1;
       var position = {ctor: "_Tuple2",_0: reasey.x,_1: reasey.y};
-      var fog = $Graphics$Collage.toForm(A3($Graphics$Element.image,_p6 * 2,_p5 * 2,A2($Basics._op["++"],root,"fog-c.png")));
+      var fog = $Graphics$Collage.toForm(A3($Graphics$Element.image,_p7 * 2,_p6 * 2,A2($Basics._op["++"],root,"fog-c.png")));
       var stars = $Graphics$Collage.toForm(A3($Graphics$Element.image,500,500,A2($Basics._op["++"],root,"stars-5.png")));
       var lander = A2($Graphics$Collage.rotate,$Basics.degrees(reasey.a),A2($Graphics$Collage.move,position,$Graphics$Collage.toForm(drawLander(reasey))));
-      var _p4 = {ctor: "_Tuple2",_0: $Basics.toFloat(_p6),_1: $Basics.toFloat(_p5)};
-      var w = _p4._0;
-      var h = _p4._1;
+      var _p5 = {ctor: "_Tuple2",_0: $Basics.toFloat(_p7),_1: $Basics.toFloat(_p6)};
+      var w = _p5._0;
+      var h = _p5._1;
       var landerKeys = A2($Graphics$Collage.move,
       {ctor: "_Tuple2",_0: 100 - w / 2,_1: h / 2 - 100},
       $Graphics$Collage.toForm(A3($Graphics$Element.image,276,276,A2($Basics._op["++"],root,"thruster_keys.png"))));
@@ -7201,14 +7201,14 @@ Elm.Main.make = function (_elm) {
          function (u) {
             return A2($Graphics$Collage.move,{ctor: "_Tuple2",_0: 0,_1: u * -495},tile$);
          },
-         A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p5 / 500 | 0) + 1)));
+         A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p6 / 500 | 0) + 1)));
       };
       var tiles = A3($List.foldr,
       $List.append,
       _U.list([]),
-      A2($List.map,tile,A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p6 / 500 | 0) + 1))));
+      A2($List.map,tile,A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p7 / 500 | 0) + 1))));
       var view$ = A2($List.append,tiles,_U.list([lander,landerKeys]));
-      return A3($Graphics$Collage.collage,_p6,_p5,view$);
+      return A3($Graphics$Collage.collage,_p7,_p6,view$);
    });
    var main = A3($Signal.map2,view,$Window.dimensions,A3($Signal.foldp,update,reasey,input));
    return _elm.Main.values = {_op: _op
