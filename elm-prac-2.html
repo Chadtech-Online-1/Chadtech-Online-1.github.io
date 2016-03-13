@@ -7079,68 +7079,6 @@ Elm.Main.make = function (_elm) {
       var delta = A2($Signal.map,function (t) {    return t / 40;},$Time.fps(30));
       return A2($Signal.sampleOn,delta,A3($Signal.map2,F2(function (v0,v1) {    return {ctor: "_Tuple2",_0: v0,_1: v1};}),delta,$Keyboard.keysDown));
    }();
-   var drawLander = function (reasey) {
-      var rightBack = _U.eq(reasey.thrusters.rightBack,1) ? _U.list([A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: 23,_1: -9},
-      A2($Graphics$Collage.rotate,$Basics.degrees(180),$Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,"blast_yaw.png"))))]) : _U.list([]);
-      var rightFront = _U.eq(reasey.thrusters.rightFront,1) ? _U.list([A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: 23,_1: 11},
-      A2($Graphics$Collage.rotate,
-      $Basics.degrees(180),
-      A2($Graphics$Collage.scale,-1,$Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,"blast_yaw_f.png")))))]) : _U.list([]);
-      var rightSide = _U.eq(reasey.thrusters.rightSide,1) ? _U.list([A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: -30,_1: 1},
-      A2($Graphics$Collage.rotate,$Basics.degrees(0),$Graphics$Collage.toForm(A3($Graphics$Element.image,8,3,"blast_strafe.png"))))]) : _U.list([]);
-      var leftSide = _U.eq(reasey.thrusters.leftSide,1) ? _U.list([A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: 30,_1: 1},
-      A2($Graphics$Collage.rotate,$Basics.degrees(180),$Graphics$Collage.toForm(A3($Graphics$Element.image,8,3,"blast_strafe.png"))))]) : _U.list([]);
-      var leftBack = _U.eq(reasey.thrusters.leftBack,1) ? _U.list([A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: -23,_1: -9},
-      A2($Graphics$Collage.scale,-1,$Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,"blast_yaw_f.png"))))]) : _U.list([]);
-      var leftFront = _U.eq(reasey.thrusters.leftFront,1) ? _U.list([A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: -23,_1: 11},
-      $Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,"blast_yaw.png")))]) : _U.list([]);
-      var mainThruster = _U.eq(reasey.thrusters.main,1) ? _U.list([A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: 0,_1: -32},
-      $Graphics$Collage.toForm(A3($Graphics$Element.image,12,33,"blast_main.png")))]) : _U.list([]);
-      var lander = _U.list([$Graphics$Collage.toForm(A3($Graphics$Element.image,138,138,"lander.png"))]);
-      var lander$ = A2($List.append,
-      lander,
-      A2($List.append,
-      mainThruster,
-      A2($List.append,leftFront,A2($List.append,rightFront,A2($List.append,leftBack,A2($List.append,rightBack,A2($List.append,leftSide,rightSide)))))));
-      return A3($Graphics$Collage.collage,138,138,lander$);
-   };
-   var view = F2(function (_p0,reasey) {
-      var _p1 = _p0;
-      var _p4 = _p1._0;
-      var _p3 = _p1._1;
-      var position = {ctor: "_Tuple2",_0: reasey.x,_1: reasey.y};
-      var fog = $Graphics$Collage.toForm(A3($Graphics$Element.image,_p4 * 2,_p3 * 2,"fog-c.png"));
-      var stars = $Graphics$Collage.toForm(A3($Graphics$Element.image,500,500,"stars-5.png"));
-      var lander = A2($Graphics$Collage.rotate,$Basics.degrees(reasey.a),A2($Graphics$Collage.move,position,$Graphics$Collage.toForm(drawLander(reasey))));
-      var _p2 = {ctor: "_Tuple2",_0: $Basics.toFloat(_p4),_1: $Basics.toFloat(_p3)};
-      var w = _p2._0;
-      var h = _p2._1;
-      var landerKeys = A2($Graphics$Collage.move,
-      {ctor: "_Tuple2",_0: 100 - w / 2,_1: h / 2 - 100},
-      $Graphics$Collage.toForm(A3($Graphics$Element.image,276,276,"thruster_keys.png")));
-      var tile = function (t) {
-         var pos = {ctor: "_Tuple2",_0: 500 * t - (w - 500) / 2,_1: h - 500};
-         var tile$ = A2($Graphics$Collage.move,pos,stars);
-         return A2($List.map,
-         function (u) {
-            return A2($Graphics$Collage.move,{ctor: "_Tuple2",_0: 0,_1: u * -495},tile$);
-         },
-         A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p3 / 500 | 0) + 1)));
-      };
-      var tiles = A3($List.foldr,
-      $List.append,
-      _U.list([]),
-      A2($List.map,tile,A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p4 / 500 | 0) + 1))));
-      var view$ = A2($List.append,tiles,_U.list([lander,landerKeys]));
-      return A3($Graphics$Collage.collage,_p4,_p3,view$);
-   });
    var physics = F2(function (dt,reasey) {
       return _U.update(reasey,{y: reasey.y + dt * reasey.vy,x: reasey.x + dt * reasey.vx,a: reasey.a + dt * reasey.va});
    });
@@ -7200,11 +7138,81 @@ Elm.Main.make = function (_elm) {
                   ,rightSide: A2(keyPressed,k,keys)
                   ,rightBack: A2(keyPressed,u,keys)}});
    });
-   var update = F2(function (_p5,reasey) {    var _p6 = _p5;return A2(physics,_p6._0,thrust(A2(setThrusters,_p6._1,reasey)));});
+   var update = F2(function (_p0,reasey) {    var _p1 = _p0;return A2(physics,_p1._0,thrust(A2(setThrusters,_p1._1,reasey)));});
    var reasey = {x: 0,y: 0,a: 0,vx: 0,vy: 0,va: 0,thrusters: {leftFront: 0,leftSide: 0,leftBack: 0,main: 0,rightFront: 0,rightSide: 0,rightBack: 0}};
-   var main = A3($Signal.map2,view,$Window.dimensions,A3($Signal.foldp,update,reasey,input));
    var Ship = F7(function (a,b,c,d,e,f,g) {    return {x: a,y: b,a: c,vx: d,vy: e,va: f,thrusters: g};});
+   var root = "https://raw.githubusercontent.com/Chadtech-Online-1/Chadtech-Online-1.github.io/master/";
+   var drawLander = function (reasey) {
+      var rightBack = _U.eq(reasey.thrusters.rightBack,1) ? _U.list([A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: 23,_1: -9},
+      A2($Graphics$Collage.rotate,
+      $Basics.degrees(180),
+      $Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,A2($Basics._op["++"],root,"blast_yaw.png")))))]) : _U.list([]);
+      var rightFront = _U.eq(reasey.thrusters.rightFront,1) ? _U.list([A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: 23,_1: 11},
+      A2($Graphics$Collage.rotate,
+      $Basics.degrees(180),
+      A2($Graphics$Collage.scale,-1,$Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,A2($Basics._op["++"],root,"blast_yaw_f.png"))))))]) : _U.list([]);
+      var rightSide = _U.eq(reasey.thrusters.rightSide,1) ? _U.list([A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: -30,_1: 1},
+      A2($Graphics$Collage.rotate,
+      $Basics.degrees(0),
+      $Graphics$Collage.toForm(A3($Graphics$Element.image,8,3,A2($Basics._op["++"],root,"blast_strafe.png")))))]) : _U.list([]);
+      var leftSide = _U.eq(reasey.thrusters.leftSide,1) ? _U.list([A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: 30,_1: 1},
+      A2($Graphics$Collage.rotate,
+      $Basics.degrees(180),
+      $Graphics$Collage.toForm(A3($Graphics$Element.image,8,3,A2($Basics._op["++"],root,"blast_strafe.png")))))]) : _U.list([]);
+      var leftBack = _U.eq(reasey.thrusters.leftBack,1) ? _U.list([A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: -23,_1: -9},
+      A2($Graphics$Collage.scale,-1,$Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,A2($Basics._op["++"],root,"blast_yaw_f.png")))))]) : _U.list([]);
+      var leftFront = _U.eq(reasey.thrusters.leftFront,1) ? _U.list([A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: -23,_1: 11},
+      $Graphics$Collage.toForm(A3($Graphics$Element.image,2,9,A2($Basics._op["++"],root,"blast_yaw.png"))))]) : _U.list([]);
+      var mainThruster = _U.eq(reasey.thrusters.main,1) ? _U.list([A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: 0,_1: -32},
+      $Graphics$Collage.toForm(A3($Graphics$Element.image,12,33,A2($Basics._op["++"],root,"blast_main.png"))))]) : _U.list([]);
+      var lander = _U.list([$Graphics$Collage.toForm(A3($Graphics$Element.image,138,138,A2($Basics._op["++"],root,"lander.png")))]);
+      var lander$ = A2($List.append,
+      lander,
+      A2($List.append,
+      mainThruster,
+      A2($List.append,leftFront,A2($List.append,rightFront,A2($List.append,leftBack,A2($List.append,rightBack,A2($List.append,leftSide,rightSide)))))));
+      return A3($Graphics$Collage.collage,138,138,lander$);
+   };
+   var view = F2(function (_p2,reasey) {
+      var _p3 = _p2;
+      var _p6 = _p3._0;
+      var _p5 = _p3._1;
+      var position = {ctor: "_Tuple2",_0: reasey.x,_1: reasey.y};
+      var fog = $Graphics$Collage.toForm(A3($Graphics$Element.image,_p6 * 2,_p5 * 2,A2($Basics._op["++"],root,"fog-c.png")));
+      var stars = $Graphics$Collage.toForm(A3($Graphics$Element.image,500,500,A2($Basics._op["++"],root,"stars-5.png")));
+      var lander = A2($Graphics$Collage.rotate,$Basics.degrees(reasey.a),A2($Graphics$Collage.move,position,$Graphics$Collage.toForm(drawLander(reasey))));
+      var _p4 = {ctor: "_Tuple2",_0: $Basics.toFloat(_p6),_1: $Basics.toFloat(_p5)};
+      var w = _p4._0;
+      var h = _p4._1;
+      var landerKeys = A2($Graphics$Collage.move,
+      {ctor: "_Tuple2",_0: 100 - w / 2,_1: h / 2 - 100},
+      $Graphics$Collage.toForm(A3($Graphics$Element.image,276,276,A2($Basics._op["++"],root,"thruster_keys.png"))));
+      var tile = function (t) {
+         var pos = {ctor: "_Tuple2",_0: 500 * t - (w - 500) / 2,_1: h - 500};
+         var tile$ = A2($Graphics$Collage.move,pos,stars);
+         return A2($List.map,
+         function (u) {
+            return A2($Graphics$Collage.move,{ctor: "_Tuple2",_0: 0,_1: u * -495},tile$);
+         },
+         A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p5 / 500 | 0) + 1)));
+      };
+      var tiles = A3($List.foldr,
+      $List.append,
+      _U.list([]),
+      A2($List.map,tile,A2($List.map,function (n) {    return $Basics.toFloat(n);},_U.range(0,(_p6 / 500 | 0) + 1))));
+      var view$ = A2($List.append,tiles,_U.list([lander,landerKeys]));
+      return A3($Graphics$Collage.collage,_p6,_p5,view$);
+   });
+   var main = A3($Signal.map2,view,$Window.dimensions,A3($Signal.foldp,update,reasey,input));
    return _elm.Main.values = {_op: _op
+                             ,root: root
                              ,Ship: Ship
                              ,reasey: reasey
                              ,keyPressed: keyPressed
