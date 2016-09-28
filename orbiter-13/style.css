@@ -1,0 +1,355 @@
+@font-face {
+  font-family: HFNSS;
+  src: url("https://cdn.rawgit.com/Chadtech-Online-1/Chadtech-Online-1.github.io/master/HFNSS.ttf");
+}
+::-webkit-input-placeholder {
+  color: #54574d;
+}
+body {
+  background: #030907;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.point {
+  font-family: HFNSS;
+  color: #b0a69a;
+  font-size: 2em;
+  margin: 0;
+}
+.point.tiny {
+  font-size: 1.5em;
+}
+.point.urgent {
+  color: #b39f4b;
+}
+.point.urgenter {
+  color: #e3d34b;
+}
+.point.critical {
+  color: #f21d23;
+}
+.point.ignorable {
+  color: #807872;
+}
+.point.very-ignorable {
+  color: #54574d;
+}
+.point.blink {
+  animation-duration: 800ms;
+  animation-name: blinkText;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: blinkText 800ms infinite;
+  -webkit-animation-timing-function: steps(2, end);
+}
+.root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main {
+  margin: auto;
+  height: 600px;
+  width: 1053;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.chat-room-container {
+  background-color: #000;
+  display: inline-block;
+  width: 247px;
+  height: 581px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-right: 11px;
+}
+.key-diagram {
+  background-color: #000;
+  display: inline-block;
+  width: 156px;
+  height: 130px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  padding: 11px;
+  margin-right: 11px;
+  position: absolute;
+  left: 0px;
+  top: 450px;
+}
+.key-example {
+  background-color: #000;
+  display: inline-block;
+  width: 178px;
+  height: 178px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  margin-right: 11px;
+  position: absolute;
+  left: 0px;
+  top: 255px;
+}
+.key-example-image {
+  width: 178px;
+  height: 178px;
+}
+.instructions {
+  padding: 11px;
+  position: absolute;
+  left: 0px;
+  width: 156px;
+  height: 216px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+}
+.right-hud {
+  margin-left: 11px;
+  display: inline-block;
+  width: 248px;
+  position: absolute;
+  left: 799px;
+  top: 0px;
+}
+.mini-map-container {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  padding: 11px;
+  width: 222px;
+  height: 222px;
+  float: right;
+  margin-bottom: 11px;
+}
+.mini-map-container div img {
+  image-rendering: inherit;
+}
+.big-map-container {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  width: 600px;
+  height: 600px;
+  top: 0px;
+  left: 193px;
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid #b0a69a;
+}
+.read-out-container {
+  background-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  padding: 11px;
+  width: 222px;
+  height: 319px;
+  float: right;
+}
+.read-out-column {
+  float: left;
+  width: 111px;
+}
+.game-view {
+  top: 0px;
+  left: 193px;
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid #b0a69a;
+}
+.left-hud {
+  width: 156px;
+  height: 581px;
+  left: 50px;
+}
+.velocity-gauge {
+  padding: 11px;
+  z-index: 5;
+  position: fixed;
+  top: 0px;
+  right: 252px;
+  width: 58px;
+  height: 40px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+}
+.chat-messages {
+  background-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  top: 36px;
+  position: absolute;
+  height: 478px;
+  width: 222px;
+  overflow: scroll;
+  padding: 11px;
+}
+.chat-input {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  background-color: #000;
+  color: #b0a69a;
+  font-family: HFNSS;
+  font-size: 1.5em;
+  outline: none;
+  width: 248px;
+  height: 52px;
+  position: absolute;
+  top: 552px;
+  overflow: hidden;
+}
+.name-field {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  background-color: #000;
+  color: #807872;
+  font-family: HFNSS;
+  font-size: 2em;
+  outline: none;
+  width: 248px;
+}
+.paused-notice {
+  padding: 11px;
+  z-index: 5;
+  position: fixed;
+  background: #030907;
+  top: 200px;
+  right: 434px;
+  width: 220px;
+  height: 17px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: 4;
+  animation-duration: 800ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: blink 800ms infinite;
+  -webkit-animation-timing-function: steps(2, end);
+}
+.died-notice {
+  padding: 11px;
+  z-index: 5;
+  position: fixed;
+  top: 200px;
+  right: 290px;
+  width: 500px;
+  height: 38px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #807872;
+  animation-duration: 800ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: blink 800ms infinite;
+  -webkit-animation-timing-function: steps(2, end);
+}
+.died-notice p {
+  text-align: center;
+}
+.nav-markers {
+  z-index: 5;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 630px;
+  height: 630px;
+}
+@-webkit-keyframes blink {
+  from {
+    border-color: #b0a69a;
+  }
+  to {
+    border-color: #f21d23;
+  }
+}
+@-webkit-keyframes blinkText {
+  from {
+    color: #b0a69a;
+  }
+  to {
+    color: #f21d23;
+  }
+}
+@-moz-keyframes blink {
+  from {
+    border-color: #b0a69a;
+  }
+  to {
+    border-color: #f21d23;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    border-color: #b0a69a;
+  }
+  to {
+    border-color: #f21d23;
+  }
+}
+@-o-keyframes blink {
+  from {
+    border-color: #b0a69a;
+  }
+  to {
+    border-color: #f21d23;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: #b0a69a;
+  }
+  to {
+    border-color: #f21d23;
+  }
+}
+@-moz-keyframes blinkText {
+  from {
+    color: #b0a69a;
+  }
+  to {
+    color: #f21d23;
+  }
+}
+@-webkit-keyframes blinkText {
+  from {
+    color: #b0a69a;
+  }
+  to {
+    color: #f21d23;
+  }
+}
+@-o-keyframes blinkText {
+  from {
+    color: #b0a69a;
+  }
+  to {
+    color: #f21d23;
+  }
+}
+@keyframes blinkText {
+  from {
+    color: #b0a69a;
+  }
+  to {
+    color: #f21d23;
+  }
+}
