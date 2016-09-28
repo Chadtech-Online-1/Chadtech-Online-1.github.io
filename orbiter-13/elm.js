@@ -15813,7 +15813,7 @@ var _chadtech$orbiter_d$Instructions$instructions = A2(
 				]),
 			_elm_lang$core$Native_List.fromArray(
 				[
-					_elm_lang$html$Html$text('Collect resources. Dont run out of air. Dont fly into the planet. Dont crash. \'G\' to fire missile. Nav markers show nearby stuff and point where they are traveling relative to you. Gray arrow is north. Blue arrow is your direction.')
+					_elm_lang$html$Html$text('Collect resources. Dont run out of air. Dont crash. \'G\' to fire missile. \'T\' for map view. Nav markers show nearby stuff and point where they are traveling relative to you. Gray arrow is north. Blue arrow is your direction.')
 				]))
 		]));
 
