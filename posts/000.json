@@ -1,0 +1,58 @@
+{
+  "title": "Criticizing a Comment on Logic 0",
+  "date": "20160122",
+  "body": [
+    {
+      "body": [
+        "The other day I read 'Crystal Clear: An Interview with Shea Zellweger' from an online magazine called Cabinet (http://www.cabinetmagazine.org/issues/18/crystal.php). Shea Zellweger is a psychology professor who many decades ago invented something he calls the Logic Alphabet. I dont mean to publicize him, hes kind of a hack, and his idea isnt interesting.",
+        "But in the interview he did say one thing that grabbed my attention. Zellweger said:",
+        "'.. you can write such logical expressions as: A . (A # B) [\"A and if A then B\" in logic notation ]. Then, just as in math, you can use the laws of arithmetic to find the solutions to equations by reducing them to a simple value-for instance, the solution to the equation ((2 + 7) x 8)) / (3 x 2) is 12-so in logic you can use laws to find solutions to logical expressions. The \"solution\" to the example cited above is \"B\".' (equations formatted from original source)"
+      ],
+      "type": "logic"
+    },
+    {
+      "body": [
+        "How exactly is B the solution to 'A.(A # B)'? Zellweger says 12 is the solution to '((2 + 7) x 8)) / (3 x 2)'. The arithmetic expression certainly equals 12 ((2 + 7) x 8)) / (3 x 2) = 12, we all know that. Then is Zellweger saying ' (A.(A#B)) = B '? Whether or not this is what Zellweger had in mind, the expression is actually not equal to B. I think its worth exploring exactly what equality means, and how the concept of equality varies in different contexts."
+      ],
+      "type": "logic"
+    },
+    {
+      "body": [
+        "When two things are equal, they are the same. In the purest sense of equality, two things are equal when they are in fact the same thing. This means, if a equals b, the names 'a' and 'b' have the same designatum. In mathematics, when we say '2 + 2 = 4', we arent saying that there is a number on the left side of the equation, and a different number on the right side, and that these two numbers, while distinct, are in fact equal. By the expression '2 + 2 = 4' we say that they are the same number on the left and right side-- the same thing is on the left and right sides.",
+        "But how are they the same? Here its valueable to think of numbers not as objects, but as calculations (as they truly are). The glyph '4' is physically simple, but as a symbol '4' isnt actually a simple symbol that refers to a single mathematical entity. 4 is a calculation, which therefore has constituent parts. 4 is the product of a method of calculating, specifically, iterating one more than 3. 4 isnt the result of some function called '2 + 2'; we dont write '2 + 2 -> 4'. Both being calculations, '4' and '2 + 2' are actually the same sort of thing. When we say they are equal we are saying that the operations take us the same place (and indeed, by taking us to the same place, they are in actuality the same thing, if one accepts the philosophical maxim that 'what something is, is what it does'). ",
+        "(Viewing numbers in this way does a lot of good for resolving mathematical confusions. For example, consider the weirdness people associate with the number pi, and its unending decimal place. Its a calculation that when executed to a limited extent produces a finite amount of decimal values. The calculation is infinite, because the calculation has no specified ending. In this sense the number is infinite, since the number is the calculation, but that doesnt mean there is some weird magic infiniteness to a string of number glyphs. Theres an end to every physical expression. There is an end to every operation. There is an end to expressions and operations even of non-physical entities like mathematical laws that have no ending point. In the same way 'walk to the store' is an operation that ends at the store, but 'walk' is an operation that wont ever end, and despite that, when I simply walk I dont walk to every point along some infinite path.)"
+      ],
+      "type": "normal"
+    },
+    {
+      "body": [
+        "So what about what Zellweger said? The values of A and B are just numbers, albiet special boolean numbers. Fortunately in boolean algebra there are only two numbers, and we can verify whether (A.(A#B))=B, by checking all four possible value combinations for A and B ([1,1], [1,0], [0,1], and [0,0], where 1 means 'true' and 0 means 'false'). Lets do that below..",
+        "[1,1]",
+        "1.(1#1) = 1",
+        "1.1 = 1",
+        "1 = 1",
+        "[1,0]",
+        "1.(1#0) = 0",
+        "1.0 = 0",
+        "0 = 0",
+        "[0,1]",
+        "0.(0#1) = 1",
+        "0.1 = 1",
+        "0 = 1",
+        "[0,0]",
+        "0.(0#0) = 0",
+        "0.0 = 0",
+        "0 = 0",
+        "A.(A#B) does not equal B, at least, not when B is true and A is false ([0,1])."
+      ],
+      "type": "logic"
+    },
+    {
+      "body": [
+        "The equals sign works differently and means different things in different contexts. For example, in boolean algebra the variables, or 'propositions', can be connected by an equal sign, but in first order logic they cant be. In first order logic, objects can be connected by equals signs. There is a symbol for equivalence in propositional logic, but it works a little bit differently than the equals sign.",
+        "There are other sublties too. For example, In the context of boolean algebra there is nothing wrong with saying 'A = true', or 'A = 1'. Truth values are just numbers, and for one reason or another you might have to assign a variable a value. In first order logic, one cant state a propositions truth value explicitly when their formal logic parrallels some philosophic work. This is because truth isnt just a number but some concept that has to be accounted for, which probably cant be related to propositions in a simple way, or at least not in a way that is endogenous to a propositional expression."
+      ],
+      "type": "normal"
+    }
+  ]
+}

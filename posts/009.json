@@ -1,0 +1,26 @@
+{
+  "title": "Weird Sound p1.1",
+  "date": "20160314",
+  "body": [
+    {
+      "body": [
+        "When I first started concerning myself with sound, in a technical context, I thought of sound as being about vibrations dressed up with effects. If ones plays the electric guitar, the guitar produces some collection of frequencies, and then you dress them up with distortion and echo effects from electronic devices. The product of effects is just a new collection of frequencies. Effects can be mechanical too, like rubber dampeners, differently sized bodies, 'undamperers' that grate against strings to buzz them, sympathetic voices. An effect is just a function that maps one collection of frequencies to another, by whatever means. A sound is a collection of frequencies, and by application of an effect, can you produce a new collection of frequencies.",
+        "I no longer believe any of that.",
+        "Rather than describing sound in terms of frequencies and effect, we should do so in terms of pulse and medium. An acoustic guitar is in a room, and therefore its sound is altered by the room, but what is also true, is that the guitar itself is a room. The room is a medium, and the sound in it is in part determined by the room itself. The guitars body is a medium, and its sound is determined by the way it as well. The string is also a 'room' through which sound travels in a particular manner. The entire character of a sound is just by successive transfer from one medium to another. A pulse happened in a medium, and the medium expressed its pulse. As a sound moves into a new medium, the constituent pulsations of the sound pulse into the new medium and produce a new sound- a new duration of pulsations. A single pulse is processed by a medium into several more pulsations spread out over time, which, are each further processed if they transition to new mediums."
+      ],
+      "type": "normal"
+    },
+    {
+      "body": [
+        "In physics, its been speculated that there is only one electron in the entire universe, and that, the sole electron is travelling through time and co-existing with itself. I wouldnt know if this is true in physics, but we could think of pulsation in this way (minus the time travel); that there is one and only one pulse that gets expressed in different ways. To whatever extent two pulses sound different, is due to how they sound in particular rooms, and mediums. If you remove the character given to a sound by its medium, then you are left with just one fundamental 'ping' that is responsible for all sounds. We hear 'the pulse' as it sounds flying through a room; as we hear it bouncing up and down a guitar string; when it sounds flying through a room after bouncing out of a guitar, etc."
+      ],
+      "type": "normal"
+    },
+    {
+      "body": [
+        "I know this is a really fantastic way of describing sound (really too fantastic for my taste). It is actually useful to talk about sound like this. A notion of sound founded on pulsation, gives a common language to harmonic and noisy sounds, whereas a theory of music that revolves entirely around harmonic sounds cannot say anything about noisy sounds. The converse is also true, if we had a theory of music that describes the rhythms produced by noisy sounds, like a drum set hi hat, the theory couldnt explain why if the hi hat was replaced by a key on a piano, the rhythm might fail. Noisy sounds can do things harmonic sounds cant, and vice versa. We will only be able to describe the relationship between the harmonic rules and the noisey rules, if we can describe the relationship between noise and harmony."
+      ],
+      "type": "normal"
+    }
+  ]
+}
