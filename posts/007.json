@@ -3,7 +3,7 @@
   "date": "20160302",
   "body": [
     {
-      "body": [
+      "content": [
         "During my education in economics, a professor of mine introduce me to something he called the  'Economic Trinity', which is kind of like a set theoretic foundation for economics.",
         "The first component of this 'Trinity' is ones preferences. In economics, we assume every person has preferences, where each preference is a ranking between two states of the world. Ones preferences, are a very long list of formulas, each of which say things like 'It would be better if I got out of bed than if I remained in bed'; which is to say, that the state of the world where I am in bed is inferior to the one which I am out of bed.",
         "The second component, is ones utility. Ones utility, isnt some philosophical idea of happiness or anything very fancy. Ones utility is a number. A utility function, is one that returns ones utility given a state of the world. U() is my utility function, and U(B) is a number that corresponds to that state of the world. The thing about the utility function, is that if C is preferred to B, U(B) returns a number smaller than than U(C). Thus if C is preferred to B, then U(C) > U(B). Thus, for any two states of the world which stand in some preference relationship, there exists an ordering of real numbers that corresponds.",
@@ -14,7 +14,7 @@
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "Philosophers have made complimentary progress. In GEM Anscombes book 'Intention' she gives the example, that a person sawing a wooden board in half is making noise, saw dust, and two shorter boards. We suppose that they at least intend on cutting a board in half, and not that they intend only to produce noise, even tho the noise was produced as knowingly as the two shorter boards. When we deduce someones intentions (or interests, or economic preferences), we do so by means of reasons, and that for any action there are competing descriptions for the intention behind it. A situation in which someone intends on making a sawing noise looks identical to one in which one saws two boards in half. One must have a reason for concluding the noise versus the boards were their intent. One can deduce an intention unreasonably, or disputably.",
         "Sometimes propositions regarding intent are frustratingly motivated. A large chuck of political commentary, for example, is just the suggestion that such and such politician made action C because they held a particular nasty intention B. Such comments arent made because its its credible to believe B motivates C. What is depressingly important to the commentator is if B is very nasty, because then the politicians actions would correspond to a (possible) internal nastiness. One can be choosey in what intentions they will derive, and nasty intents are always among many plausible intents. I dislike coming to the conclusion that people derive intentions deliberately to establish nastiness, but it often seems to be that way.",
         "One can derive an intention that seems perfectly fitting, and the derivation itself could remain pointless. If one pays the concept of intention no respect, then one deduces compsulsively, like some mental tick; one strains a form reasoning to its limit, it affects their life like a strained leg muscle induces a limp. They could reason and act, but only in jerky and inefficient mental movements, perhaps always starting off in wrong directions and having to turn around later."
@@ -22,14 +22,14 @@
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "The modern criticisms of economics are sometimes strange. They arent always wrong, but they would seem to criticize quite a lot more than the business of economists. Perhaps economics is crap, and has failed to be valuable scholarship. Perhaps thats all true. What we couldnt do tho, is suggest that the problems of economics are the result of this foundation of observable intent. This foundation isnt much of an option. We all have no choice but to suppose peoples actions relative to an intention.",
         "The criticism against economists, that scientifically useful preferences cannot be discovered from observed actions, is deserved to normal people as much as it is deserved to economists. People are constantly inferring intentions from the actions of their peers. They are wrong frequently, and sometimes offensively wrong. A model of someones intentions is not something just for academics, and if normal people speculate intentions stupidly, then they do far more damage than a bad academician."
       ],
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "The deeper truth, is that intentions dont exist in a mans mind, but rather, in the minds of those who observe him. Intention is an analytic construction, made for one reason or another (perhaps to predict, perhaps to assign guilt, perhaps as a joke). Its like a mathematical object. Like any concept, it can be misapplied. It can be used even unnecessarily. An intention proposition can be true, and meaninglessly so."
       ],
       "type": "normal"

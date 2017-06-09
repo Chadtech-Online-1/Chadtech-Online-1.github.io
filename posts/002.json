@@ -3,14 +3,14 @@
   "date": "20150125",
   "body": [
     {
-      "body": [
+      "content": [
         "Modern ethics has made the achievement of differentiating between goodness and obligation. We would now look at an account of ethics that can explain what we ought to do, and see that it still has said nothing about what is in fact good. Some have exhausted themselves describing our ethical obligations, and then, seemingly only after they were reminded of that they forgot a central element of ethics (goodness), they say something like 'goodness is only what our obligations pursue'. The converse is also possible: to fully describe what is good, but then do apparently nothing to describe the ethical justification of a decision.",
         "In modern ethics too, we differentiate between ethics and meta-ethics, though I dont know if this counts as an achievement. If meta-ethical discourse talks about what the content of ethics is, then the content of ethics doesnt seem so philosophical (and maybe it isnt). Two types of philosophical examinations are necessarily on equal footing, and if meta-ethics and ethics are not, then one must be philosophical and the other not. Meta-ethics apparently tells us what 'dont lie' means, and 'dont lie' is an ordinary thing to say that has no real philosophical reflectiveness. If ethics truly is an area of philosophy, then it should examine something, and not simply give us moral orders. If its not an area of philosophy, then its probably nothing in the first place: people just sometimes tell each other what they should do."
       ],
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "Today we have two areas of philosophy: meta-ethics, and ethics, but the field we have today called 'meta-ethics' largely resembles what the field of ethics was up until very recently. Meta-ethics is a matter of talking about what goodness and ethical obligation are, and in doing so, it isnt necessary for one to actually state outright what our obligations are; in fact doing so would really spoil the philosophical pursuit (in the same way, logic and mathematics are both best conducted when the values of variables are not determined).",
         "Kants moral philosophy today, is taught as if Kant had developed it in order to argue for certain ethical behavior. He didnt. For Kant, what counted as ethical behavior was already well known. Kant knew lying was bad; and Kant knew too, that everyone else knew lying was bad as well. From the perspective of Kant, as well as nearly every other ethical commentator, what actions were ethical was not in dispute. The tendancy to look at moral claims as trying to persuade an audience towards certain behavior is uniquely modern.",
         "Kant, and every other moral philosopher, have been answering 'What is goodness?' and not 'What among things are good?'"
@@ -18,7 +18,7 @@
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "The trolley car example, I believe, demonstrates our uniquely modern ethical confusions. Its confused to believe, as the trolley car example assumes, that we could possibly know what to do in a scenario is by design an edge case. Rather, our ethical knowledge, or knowledge of what we should do, best demonstrates itself when we are in ordinary circumstance. No one has a moral reflection on whether or not to do simple tasks like eat a meal. This is not because they are negligently unreflective or corrupt as ethical actors; but because they already have (ethical) conviction. The need for ethical instruction, or the compulsion to ask 'should' and 'ought' questions happen in rare circumstances of ethical vacuum.",
         "Many 'high stakes' hypothetical situations that qualify as ethical dilemmas, could be reformulated as very 'low stakes' situations; at the point of doing so, are they still dilemmas? Consider a trolley car example where victims suffer a harmless slap, or a trip to the DMV, instead of death. If its actually only the logic of the example that matters in making the decision, then completely mundane activities we do every day thoughtlessly, qualify as ethically interesting much as the trolley car example. But that might not be true. If its not the logic of the example that matters, but rather that death has some significance that a smaller injury does not have- if human life is some key ingredient in making the decision- then the trolley car isnt a dilemma because we dont understand the structure of the example, but because normal people dont understand what the role of a human life is in such a decision.",
         "In short, the trolley car example is a dilemma, not because we are conflicted in giving an answer, but because we are totally unqualified. In the same way, asking a four year old a calculus question would stupify them, not because in their mind mathematical thoughts compete for their attention, but because they just dont know anything to begin with. An integral sign has no role in their decision as to how to calculate, and neither does a human life to a normal person witnessing an accidnt."
@@ -26,7 +26,7 @@
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "I believe the central ethical questions of today are 'When does someone not know what to do?', 'How do people learn what to do?', and 'Is there anything different about the ethical knowledge of a bad person, compared to a good one?"
       ],
       "type": "normal"

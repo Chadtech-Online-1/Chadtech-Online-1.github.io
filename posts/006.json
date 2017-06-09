@@ -3,7 +3,7 @@
   "date": "20160225",
   "body": [
     {
-      "body": [
+      "content": [
         "Lets specify a class of sounds called tones. Tones are sounds that have a frequency. Something that has a frequency, like a sound, occurs regularly in an interval of time. A sound frequency is a sequence of air pressure that happens repeatedly over an interval. Pretty believable that some sounds are tones and others arent right?",
         "Well, maybe it shouldnt be so believable. For a sound to qualify as a tone, it must persist in time long enough for at least two cycles of a frequency, otherwise its not really a frequency. If something only happens once, its not repeated. It wouldnt make any sense to call something a 'single cycle', because everything is a single occurance of itself. This creates a problem. A tone of 1 hertz, is a sequence that happens 1 time a second. What if you sounded a 1 hertz tone for less than a second? Well, then it would repeat less than one times, and if it doesnt repeat at all, then it doesnt qualify as having a frequency.",
         "So was our break down of sounds into tones and non-tones meaningful? No, it wasnt. Sounds that are played in very short time scales still sound tonal. We still find very short audio content comprehensible. Comprehensible audio content must be in a form other than frequency. The property of sound, that we would like to call 'frequency', can be heard even when there is nothing in reality that repeats regularly in a frequency."
@@ -11,14 +11,14 @@
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "So what the heck does it mean for a sound to be tonal, if its not about frequency? There is another way out of this. Lets uncommit ourselves from frequency for a second. Lets talk about something else. Lets say that sound is a particle that is emitted from its source and is detected by our ear when that particle reaches our ear. If the particle of sound simply has 'frequencyness' then time scale no longer matters. The frequencyness is detected the moment the sound reaches us. ",
         "Thats bizarre, but its also basically realistic. People detect qualities of sound in time spans far shorter than even one cycle of a frequency within human hearing. Qualities of sound are acertained apprently upon instantaneous exposure to sound."
       ],
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "A click from a computer speaker is a near-infinitely short sound with a non-zero volume. We can hear instantaneous changes in air pressure. It seems like that is a property of sound more fundamental than even frequency. A bass drum is struck, and thus, the head of the drum undergoes an instantaneous physical deformation which ripples through its body. I think it might be truer to say, that we hear instantaneous change as its expressed through the particular body of the bass drum.",
         "A guitar undergoes an instantaneous change at a single point along its guitar string when its plucked. The pluck, the single audio 'click', travels not only from the guitar into the air, but within the guitar up and down its strings. We might think the whole activity of vibration as the content of sound, but really we hear the single point along the string that is deformed by vibration. Frequency is repeated clicks. ",
         "Several hundred clicks heard in a second still sound like distinct clicks, specially, several hundred of them. But a bass drum wouldnt sound like several hundred distinct events, even if it lasted the same duration as a hundred clicks. ",
@@ -27,7 +27,7 @@
       "type": "normal"
     },
     {
-      "body": [
+      "content": [
         "Lets rediscover what tonal sounds are. Tonal sounds are sounds that happen over a long duration, with no discernable change in character across time.  Or, another way of saying this thats way more elaborate:",
         "'True sounds' all happen in very short intervals of time. Tones are concatenations of sounds that are similar to each other. A tone that never changes in its character over its duration, is the repeated concatenation of a sound with itself. ",
         "Some very abrasive clicks could be concatenated and produce something tonal. The tonal sounds from a string on a musical instrument arent absrasive, because the content of the 'sound click' that runs along the string during vibration aligns with the rate of vibration. There is a kind of harmony between the internal content of the 'click' and the rate at which the click is induced in the medium.",

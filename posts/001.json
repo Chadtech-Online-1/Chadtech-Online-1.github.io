@@ -3,7 +3,7 @@
   "date": "20160124",
   "body": [
     {
-      "body": [
+      "content": [
         "English expressions of the form 'C is B', are either saying that C and B are the same object (C = B), or that C has the property B (B(C)).",
         "There are some classic problems with the logical proposition 'C = B'. Firstly, if C and B are truly the same, they are not simply the same in all their properties, but also exactly the same object (or, another way of saying this, is that for any two things that are the same in all those properties, those two things are actually the same single object). If we had two bottles, named 'C' and 'B', which were exactly the same in all their attributes but differently located, they wouldnt truly be equal, since they wouldnt be the same in their location. Bs property of being in its location would not be equal to Cs property of being in its location (meaning, the properties are different, not that they arent in their location), thus, C would not equal B. Every expression of equality could be rephrased as 'C = C', or 'C is itself'. 'Obama is the president' would mean exactly what 'Obama is Obama' means. Every comment 'C = B', is just a convoluted way of affirming that C is itself, which would be a pointless and strange thing to say. (Maybe its a basic finding of logic that people never say anything of substance?)",
         "We recognize that 'Obama is the president' says a lot more than 'Obama is Obama', so something must be up. One solution might be to think that the logical form of 'Obama is the president' is 'Fb', where b is Obama, and F is the property of being the president."
@@ -11,14 +11,14 @@
       "type": "logic"
     },
     {
-      "body": [
+      "content": [
         "But what if instead, we gave a little credence to the fact that when people say things like 'Obama is the president', or better 'Obama is Mr President' people are actually showing each other how to use certain names. Its not a statement about the objects in the sentence, but rather a tutorial of how to use certain logical rules with the names. One doesnt say something about Obama or Mr President, but rather they demonstrate the technique of how to use the names 'Obama' and 'Mr President'. If this were the case (and for some obsession we simply had to logically analyze) then what would be more appropriate than simply converting english expressions into logical notation, would be to write the rules of such a practice in logical notation, for that rule would be the actual fact emparted through language. That fact would be @c.Fba.(Gcb#Gca), meaning if names b and a stand in a certain liguistic relationship F (being connected by 'is'), than b appropriately naming c (via G) means a also appropriately names c. And by exposure to this fact, a listener would know what they can name b and a.",
         "What would be necessary for all of this, would be that people understand rules like @c.Fba.(GcbGca) spontaneously, and in the moment of hearing sentences like 'Obama is Mr President'."
       ],
       "type": "logic"
     },
     {
-      "body": [
+      "content": [
         "All expressions reflect certain facts, which we can very well be aware of, absent a propositional expression of those facts. The act of walking isnt a propositional statement, but walking at least demonstrates my awareness of the fact that there is ground under my feet (that is to say, the act of walking would be incomprehensible if I did not know the fact of ground under my feet). The sentence 'Obama is the president' can stand for so many different propositions, and so many different facts, or no propositions or facts at all."
       ],
       "type": "normal"

@@ -32,7 +32,7 @@ posts = _.map _.range(16), (post) ->
             str isnt ""
 
 
-        body: body
+        content: body
         type: type
 
     json
