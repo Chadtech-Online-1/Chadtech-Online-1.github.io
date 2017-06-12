@@ -10488,8 +10488,8 @@ var _Chadtech$chadtech_online_2$View_Post$viewBody = function (_p4) {
 	var _p5 = _p4;
 	return A2(_elm_lang$core$List$indexedMap, _Chadtech$chadtech_online_2$View_Post$postSection, _p5.body);
 };
-var _Chadtech$chadtech_online_2$View_Post$viewTitle = F3(
-	function (length, postNumber, title) {
+var _Chadtech$chadtech_online_2$View_Post$viewArchiveTitle = F4(
+	function (length, currentPost, postNumber, title) {
 		return A2(
 			_elm_lang$html$Html$a,
 			{
@@ -10506,7 +10506,14 @@ var _Chadtech$chadtech_online_2$View_Post$viewTitle = F3(
 								_elm_lang$core$Native_Utils.eq(
 									A2(_elm_lang$core$Basics_ops['%'], postNumber, 2),
 									0)),
-							_1: {ctor: '[]'}
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_Chadtech$chadtech_online_2$Util_ops[':='],
+									'selected',
+									_elm_lang$core$Native_Utils.eq(currentPost, length - postNumber)),
+								_1: {ctor: '[]'}
+							}
 						}
 					}),
 				_1: {
@@ -10522,13 +10529,14 @@ var _Chadtech$chadtech_online_2$View_Post$viewTitle = F3(
 				_1: {ctor: '[]'}
 			});
 	});
-var _Chadtech$chadtech_online_2$View_Post$viewTitles = function (strings) {
-	return A2(
-		_elm_lang$core$List$indexedMap,
-		_Chadtech$chadtech_online_2$View_Post$viewTitle(
-			_elm_lang$core$List$length(strings) - 1),
-		strings);
-};
+var _Chadtech$chadtech_online_2$View_Post$viewTitles = F2(
+	function (currentPost, strings) {
+		var archiveTitle = A2(
+			_Chadtech$chadtech_online_2$View_Post$viewArchiveTitle,
+			_elm_lang$core$List$length(strings) - 1,
+			currentPost);
+		return A2(_elm_lang$core$List$indexedMap, archiveTitle, strings);
+	});
 var _Chadtech$chadtech_online_2$View_Post$buttonAttributes = F2(
 	function (withinRange, route) {
 		return withinRange ? {
@@ -10611,7 +10619,7 @@ var _Chadtech$chadtech_online_2$View_Post$archive = F2(
 			},
 			A2(
 				_elm_lang$core$List$append,
-				_Chadtech$chadtech_online_2$View_Post$viewTitles(titles),
+				A2(_Chadtech$chadtech_online_2$View_Post$viewTitles, post.number, titles),
 				A2(_Chadtech$chadtech_online_2$View_Post$archiveButtons, titles, post)));
 	});
 var _Chadtech$chadtech_online_2$View_Post$viewPost = F2(

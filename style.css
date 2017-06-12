@@ -73,6 +73,10 @@ body {
   float: left;
   width: 100%;
 }
+.title-listing.selected {
+  background-color: #143b2e;
+  color: #e0d6ca;
+}
 .title-listing:hover {
   background-color: #143b2e;
   color: #e0d6ca;
