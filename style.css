@@ -1,140 +1,214 @@
 @font-face {
   font-family: HFNSS;
-  src: url("HFNSS.ttf");
+  src: url("https://cdn.rawgit.com/Chadtech-Online-1/Chadtech-Online-1.github.io/master/HFNSS.ttf");
+}
+@font-face {
+  font-family: HFNSS1;
+  src: url("https://cdn.rawgit.com/Chadtech/personal-elm-boilerplate/34fb7992/development/HFNSSvector1.ttf");
+}
+@font-face {
+  font-family: HFGAM;
+  src: url("./hfgam.ttf");
+}
+@font-face {
+  font-family: HFTIN;
+  src: url("./hftin.ttf");
 }
 @font-face {
   font-family: HFLLG;
-  src: url("HFLLG.ttf");
+  src: url("https://cdn.rawgit.com/Chadtech-Online-1/Chadtech-Online-1.github.io/e7b402f9/HFLLG.ttf");
 }
 body {
-  background: #000;
+  background: #2c2826;
   padding: 0;
   margin: 0;
 }
-.header {
-  font-family: HFNSS;
-  color: #a0968a;
-  font-size: 4em;
-  margin: 0;
-}
-.header.banner {
-  color: #807872;
-}
-.point {
-  font-family: HFNSS;
-  color: #b0a69a;
-  font-size: 2em;
-  margin: 0;
-}
-.point.logic {
-  font-family: HFLLG;
-}
-.point.link {
-  color: #b39f4b;
-  cursor: pointer;
-}
-.point.link:hover {
-  color: #e3d34b;
-}
-.point.ignorable {
-  color: #807872;
-}
-.point.date {
-  color: #a0968a;
-}
-.point.name {
-  color: #6a7886;
-}
-.point.archive-item {
-  color: #808f60;
-  cursor: pointer;
-}
-.point.archive-item:hover {
-  color: #8bcf4b;
-}
-.point-section {
-  font-family: HFNSS;
-  color: #b0a69a;
-  font-size: 2em;
-  margin: 0;
-  width: 80%;
-  height: 10em;
-  background: none;
-  outline: none;
-  outline: none;
-}
-.point-section.logic {
-  font-family: HFLLG;
-}
-.container {
-  padding: 0;
-  margin: 1em;
-  box-sizing: border-box;
-  width: auto;
-}
-.row {
-  content: '';
-  display: table;
-  clear: both;
+.main {
   width: 100%;
 }
-.row.big {
-  min-height: 3em;
+@font-face {
+  font-family: HFNSS;
+  src: url("https://cdn.rawgit.com/Chadtech-Online-1/Chadtech-Online-1.github.io/master/HFNSS.ttf");
 }
-.paper {
-  padding-left: 2em;
-  padding-top: 2em;
-  width: 968px;
+@font-face {
+  font-family: HFNSS1;
+  src: url("https://cdn.rawgit.com/Chadtech/personal-elm-boilerplate/34fb7992/development/HFNSSvector1.ttf");
+}
+@font-face {
+  font-family: HFGAM;
+  src: url("./hfgam.ttf");
+}
+@font-face {
+  font-family: HFTIN;
+  src: url("./hftin.ttf");
+}
+@font-face {
+  font-family: HFLLG;
+  src: url("https://cdn.rawgit.com/Chadtech-Online-1/Chadtech-Online-1.github.io/e7b402f9/HFLLG.ttf");
+}
+body {
+  background: #2c2826;
+  padding: 0;
+  margin: 0;
+}
+.main {
+  width: 100%;
+}
+.archive-body {
+  background-color: #06120e;
+  border-top: 2px solid #131610;
+  border-left: 2px solid #131610;
+  border-right: 2px solid #57524f;
+  border-bottom: 2px solid #57524f;
+  margin-top: 8px;
+  margin-left: 8px;
+  position: absolute;
+  left: calc(100% - 450px);
+  top: 58px;
+  width: 426px;
+  height: calc(100vh - 80px);
+  overflow: scroll;
+}
+.title-listing {
   float: left;
+  width: 100%;
 }
-.archive {
-  width: 420px;
-  float: right;
+.title-listing:hover {
+  background-color: #143b2e;
+  color: #e0d6ca;
 }
-.column {
-  float: left;
-  position: relative;
-  width: 250px;
+.title-listing:active {
+  color: #e0d6ca;
+  background-color: #807672;
 }
-.column.big {
-  width: 440px;
+.archive-buttons {
+  width: 426px;
+  height: 48px;
+  position: absolute;
+  bottom: 0px;
+}
+.archive-button {
+  display: inline-block;
+  padding: auto;
+  height: 44px;
+  width: 209px;
+  text-align: center;
+  border-top: 2px solid #57524f;
+  border-left: 2px solid #57524f;
+  border-right: 2px solid #131610;
+  border-bottom: 2px solid #131610;
+  background-color: #2c2826;
+  line-height: 44px;
+  cursor: pointer;
+}
+.archive-button.nulled {
+  color: #807672;
+}
+.archive-button.nulled:hover {
+  color: #807672;
+}
+.archive-button:hover {
+  color: #e0d6ca;
+}
+.archive-button:active {
+  border-top: 2px solid #131610;
+  border-left: 2px solid #131610;
+  border-right: 2px solid #57524f;
+  border-bottom: 2px solid #57524f;
 }
 .field {
-  background-color: #000;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #54574d;
-  font-family: HFNSS;
-  color: #54574d;
-  font-size: 2em;
+  border-top: 2px solid #131610;
+  border-left: 2px solid #131610;
+  border-right: 2px solid #57524f;
+  border-bottom: 2px solid #57524f;
   outline: none;
-  width: 400px;
-  margin-top: 2px;
+  font-family: HFNSS;
+  color: #b0a69a;
+  font-size: 2em;
+  background: #06120e;
+  -webkit-font-smoothing: none;
+  font-smooth: none;
+  height: 29px;
 }
-.field.error {
-  border-color: #f20723;
-  color: #f20723;
+.nav-bar {
+  width: calc(100% - 12px);
+  margin: 2px;
+  margin-top: 8px;
 }
-.mount {
+.nav-item {
+  margin-right: 18px;
+  padding: 4px;
+  cursor: pointer;
+}
+.nav-item.selected {
+  color: #e0d6ca;
+}
+.nav-item:hover {
+  background-color: #807672;
+  color: #e0d6ca;
+}
+.nav-item:active {
+  background-color: #e0d6ca;
+  color: #131610;
+}
+a {
+  -webkit-font-smoothing: none;
+  margin: 0;
+  font-family: hfnss;
+  color: #b0a69a;
+  font-size: 2em;
+  text-decoration: none;
+}
+p {
+  font-family: hfnss;
+  color: #b0a69a;
+  -webkit-font-smoothing: none;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-}
-.button {
-  background-color: #182406;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #807872;
-  font-family: HFNSS;
-  color: #807872;
   font-size: 2em;
-  outline: none;
-  width: 100%;
-  height: 1em;
-  margin: 0;
 }
-.button:hover {
-  background-color: #182406;
+.big {
+  font-size: 4em;
+}
+.page-title {
+  font-family: hfnss1;
   color: #b0a69a;
+  font-size: 6em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.post-body {
+  background-color: #06120e;
+  border-top: 2px solid #131610;
+  border-left: 2px solid #131610;
+  border-right: 2px solid #57524f;
+  border-bottom: 2px solid #57524f;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: calc(100% - 466px);
+  height: calc(100vh - 80px);
+  overflow: scroll;
+}
+.post-section {
+  padding: 4px;
+  margin-bottom: 4px;
+}
+.even {
+  background-color: #071d17;
+}
+.logic p {
+  font-family: HFLLG;
+}
+.title {
+  font-size: 2em;
+}
+.title-bar {
+  height: 20px;
+  width: calc(100% - 12px);
+  background-color: #b0a69a;
+  padding: 4px;
+  margin: 2px;
+}
+.title-bar p {
+  color: #131610;
+  top: 8px;
 }
